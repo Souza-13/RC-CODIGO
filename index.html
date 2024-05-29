@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,53 +22,32 @@
       </div>
       <div class="second-column">
         <h2 class="title title-second">Crie uma conta</h2>
-
         <p class="description description-second">ou use seu e-mail para cadastro:</p>
-        <form class="form">
-          <label class="label-input" for="">
+        <form id="signup-form" class="form">
+          <label class="label-input" for="name">
             <i class='bx bx-user-pin'></i>
-            <input type="text" placeholder="  Nome">
+            <input type="text" id="name" placeholder="  Nome">
           </label>
 
-          <label class="label-input" for="">
+          <label class="label-input" for="comorbidade">
             <i class='bx bx-clinic'></i>
-            <input type="text" placeholder="  Comorbidade">
+            <input type="text" id="comorbidade" placeholder="  Comorbidade">
           </label>
-          <label class="label-input" for="">
+          <label class="label-input" for="deficiencia">
             <i class='bx bx-accessibility'></i>
-            <input type="text" placeholder="  Deficiência">
+            <input type="text" id="deficiencia" placeholder="  Deficiência">
           </label>
-          <label class="label-input" for="">
+          <label class="label-input" for="email">
             <i class='bx bxl-gmail'></i>
-            <input type="email" placeholder="  Email">
+            <input type="email" id="email" placeholder="  Email">
           </label>
 
-          <label class="label-input" for="">
+          <label class="label-input" for="password">
             <i class='bx bx-lock-alt'></i>
-            <input type="password" placeholder="  Senha">
-
+            <input type="password" id="password" placeholder="  Senha">
           </label>
-          <div class="social-media">
-            <ul class="list-social-media">
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-facebook-f"></i>
-                </li>
-              </a>
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-google-plus-g"></i>
-                </li>
-              </a>
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-linkedin-in"></i>
-                </li>
-              </a>
-            </ul>
-          </div>
 
-          <a class="btn btn-second btn-link" href="telainicial.html">Cadastrar</a>
+          <button type="button" id="btn-submit" class="btn btn-second">Cadastrar</button>
         </form>
       </div>
     </div>
@@ -82,45 +60,41 @@
       </div>
       <div class="second-column">
         <h2 class="title title-second">Faça login</h2>
-
         <p class="description description-second">ou use sua conta do email:</p>
-        <form class="form">
-
-          <label class="label-input" for="">
+        <form id="login-form" class="form">
+          <label class="label-input" for="login-email">
             <i class='bx bxl-gmail'></i>
-            <input type="email" placeholder="  Email">
+            <input type="email" id="login-email" placeholder="  Email">
           </label>
 
-          <label class="label-input" for="">
+          <label class="label-input" for="login-password">
             <i class='bx bx-lock-alt'></i>
-            <input type="password" placeholder="  Senha">
+            <input type="password" id="login-password" placeholder="  Senha">
           </label>
-          <div class="social-media">
-            <ul class="list-social-media">
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-facebook-f"></i>
-                </li>
-              </a>
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-google-plus-g"></i>
-                </li>
-              </a>
-              <a class="link-social-media" href="#">
-                <li class="item-social-media">
-                  <i class="fab fa-linkedin-in"></i>
-                </li>
-              </a>
-            </ul>
-          </div>
+
           <a class="password" href="#">Esqueceu sua senha?</a>
-          <a class="btn btn-second btn-link" href="telainicial.html"> Entrar</a>
+          <button type="button" id="btn-login" class="btn btn-second btn-link">Entrar</button>
         </form>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <table id="data-table" class="data-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Comorbidade</th>
+          <th>Deficiência</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
